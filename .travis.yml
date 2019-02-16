@@ -1,0 +1,22 @@
+stages:
+  - docker-hub
+
+jobs:
+  include:
+
+    - stage: docker-hub
+      services:
+        - docker
+      env:
+        - IMAGE_NAME=felippemauricio/awscli
+        - PYTHON_VERSION="3.7.2"
+        - IMAGE_TYPE="-alpine"
+      script:
+        - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+        - docker build --build-arg IMAGE_TAG="$PYTHON_VERSION$IMAGE_TYPE" -t $IMAGE_NAME .
+        - docker tag $IMAGE_NAME $IMAGE_NAME:$PYTHON_VERSION
+        - docker push $IMAGE_NAME:$PYTHON_VERSION
+        - docker tag $IMAGE_NAME $IMAGE_NAME:latest
+        - docker push $IMAGE_NAME:latest
+      on:
+        branch: master
