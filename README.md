@@ -21,7 +21,7 @@ docker run -it -e AWS_ACCESS_KEY_ID=<value> -e AWS_SECRET_ACCESS_KEY=<value> -e 
 
 ## Docker Hub
 
-The Docker Hub page is "(felippemauricio/awscli)[https://hub.docker.com/r/felippemauricio/awscli]".
+The Docker Hub page is "[felippemauricio/awscli](https://hub.docker.com/r/felippemauricio/awscli)".
 
 ## License
 
