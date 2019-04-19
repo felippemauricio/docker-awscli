@@ -9,7 +9,7 @@ jobs:
         - docker
       env:
         - IMAGE_NAME=felippemauricio/awscli
-        - PYTHON_VERSION="3.7.2"
+        - PYTHON_VERSION="3.7.3"
         - IMAGE_TYPE="-alpine"
       script:
         - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
