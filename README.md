@@ -1,6 +1,7 @@
 # Docker awscli
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/felippemauricio/docker-awscli/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/felippemauricio/docker-awscli.svg?branch=master)](https://travis-ci.org/felippemauricio/docker-awscli)
+[![Docker Hub](https://img.shields.io/badge/docker%20hub-awscli-blue.svg)](https://hub.docker.com/r/felippemauricio/awscli)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/awscli/pulls)
 
 Containerized AWS CLI on alpine to avoid requiring the aws cli to be installed on CI machines.
